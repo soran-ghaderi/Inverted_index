@@ -112,18 +112,7 @@ def index_docs(docs, *fields):
                 index[field][token][id] += 1
     return index
 
-# def cand(*args):
-#     if not args:
-#         return Counter()
-#     out = args[0].copy()
-#     print('AND', args)
-#     for c in args[1:]:
-#         for doc_id in list(out):
-#             if doc_id not in c:
-#                 del out[doc_id]
-#             else:
-#                 out[doc_id] += c[doc_id]
-#     return out
+
 
 def combine_or(*args):
     if not args:
@@ -175,11 +164,7 @@ def query(index, query,i=0, fields=None):
         pass
 
 index = index_docs(data, 'title', 'description')
-# query(index, 'haltingly')
-# query(index, 'the', fields=['description','title'])
-# query(index, 'python', 'OR',fields=['description'])
-# query(index, 'Python web')
-# query(index, 'Python web', 'OR')
+
 
 
 # //////////////////////////////////////////////////////////////////////////////////////
