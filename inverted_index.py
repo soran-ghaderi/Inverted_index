@@ -6,7 +6,6 @@ import nltk
 import stemmedCount as stc
 import tabulate
 
-import tabulate
 from nltk import word_tokenize
 sw = open('./files/stopwords.txt','r')
 inverted_index_file = open('./files/inverted index.csv','w')
