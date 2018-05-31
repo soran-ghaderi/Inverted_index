@@ -7,8 +7,8 @@ import StringExtractor as se
 list_of_files = glob.glob('./dataset/*')
 i=0
 print(list_of_files)
-#define output file
-outputfile = open('outputfile.xml','w')
+# define output file
+# outputfile = open('outputfile.xml','w')
 # statistic = open('Statistics.txt','w')
 # brand = open('Brands.txt','w')
 # carsPerY = open('carsPerY','w')
