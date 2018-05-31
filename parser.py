@@ -4,7 +4,7 @@ import glob
 
 import StringExtractor as se
 
-list_of_files = glob.glob('./d/*')
+list_of_files = glob.glob('./dataset/*')
 i=0
 print(list_of_files)
 #define output file
