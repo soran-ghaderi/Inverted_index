@@ -112,7 +112,7 @@ def index_docs(docs, *fields):
                 index[field][token][id] += 1
     return index
 
-# def combine_and(*args):
+# def cand(*args):
 #     if not args:
 #         return Counter()
 #     out = args[0].copy()
@@ -135,7 +135,7 @@ def combine_or(*args):
 
 COMBINE = {
     'OR': combine_or,
-    # 'AND': combine_and,
+    # 'AND': cand,
 }
 
 def search_in_fields(index, query, fields):
